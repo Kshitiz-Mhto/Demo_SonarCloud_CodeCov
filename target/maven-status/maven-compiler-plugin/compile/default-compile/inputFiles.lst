@@ -1,2 +1,5 @@
 /home/ibergx00/Documents/oss/Demo_SonarCloud_CodeCov/src/main/java/com/testcoverage/code/CodeApplication.java
+/home/ibergx00/Documents/oss/Demo_SonarCloud_CodeCov/src/main/java/com/testcoverage/code/service/BookService.java
+/home/ibergx00/Documents/oss/Demo_SonarCloud_CodeCov/src/main/java/com/testcoverage/code/entity/Book.java
+/home/ibergx00/Documents/oss/Demo_SonarCloud_CodeCov/src/main/java/com/testcoverage/code/Exception/CustomExcep.java
 /home/ibergx00/Documents/oss/Demo_SonarCloud_CodeCov/src/main/java/com/testcoverage/code/Rev.java
