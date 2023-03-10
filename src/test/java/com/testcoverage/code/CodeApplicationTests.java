@@ -50,4 +50,13 @@ class CodeApplicationTests {
 	void testRevString(){
 		assertEquals("pot", reverseString.revString("top"));
 	}
+
+    @Test
+    void testNull(){
+        assertEquals(null,reverseString.revString(null));
+    }
+    @Test
+    void testEmpty(){
+        assertEquals("",reverseString.revString(""));
+    }
 }
