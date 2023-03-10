@@ -12,9 +12,9 @@ public class Rev {
         }
 
         StringBuffer rev = new StringBuffer(inp);
-        String revString = String.valueOf(rev.reverse());
+        String revStringi = String.valueOf(rev.reverse());
 
-        return  revString;
+        return  revStringi;
 
     }
 
