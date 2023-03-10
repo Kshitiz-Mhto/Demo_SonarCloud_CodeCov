@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   build-and-release:
-    if: ${{ github.event.pull_request.changed_files != null}}
+    if: ${{ github.event.pull_request.changed_files != null && github.event.paths == './test/java/com/testcoverage/code/**' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

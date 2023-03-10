@@ -23,7 +23,7 @@ class CodeApplicationTests {
 
     @Test
     void testingAssertTrue(){
-        System.out.println(" i m inside assertTrue method!!");
+        System.out.println(" i am inside assertTrue method!!");
         BookService ser = new BookService();
         ser.addBook(new Book());
         List<Book> listOfBooks = ser.books();
@@ -35,12 +35,12 @@ class CodeApplicationTests {
 
     @Test
     void testingWithSupplier0(){
-        System.out.println(" i m inside assertTrue method!!");
+        System.out.println("i am inside assertTrue method!!");
         BookService ser = new BookService();
         ser.addBook(new Book());
         List<Book> listOfBooks = ser.books();
         assertTrue(!listOfBooks.isEmpty());
-        assertTrue(() -> !listOfBooks.isEmpty(), ()->"all is bad till now ");
+        assertTrue(() -> !listOfBooks.isEmpty(), ()-> "all is bad till now ");
 
     }
 
