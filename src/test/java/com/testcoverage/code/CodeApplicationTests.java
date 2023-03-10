@@ -18,7 +18,7 @@ class CodeApplicationTests {
 
 	@BeforeAll
     static void initialMsg(){
-        System.out.println("initilizing only");
+        System.out.println("initilizing only ....");
     }
 
     @Test
