@@ -27,7 +27,7 @@ class CodeApplicationTests {
         BookService ser = new BookService();
         ser.addBook(new Book());
         List<Book> listOfBooks = ser.books();
-        //assertTrue(listOfBooks.isEmpty());
+        assertTrue(!listOfBooks.isEmpty());
         assertTrue(!listOfBooks.isEmpty(), "all is not good till now");
     }
 
@@ -39,7 +39,7 @@ class CodeApplicationTests {
         BookService ser = new BookService();
         ser.addBook(new Book());
         List<Book> listOfBooks = ser.books();
-        //assertTrue(listOfBooks.isEmpty());
+        assertTrue(!listOfBooks.isEmpty());
         assertTrue(() -> !listOfBooks.isEmpty(), ()->"all is bad till now ");
 
     }
