@@ -4,7 +4,6 @@ public class Rev {
  
     public String revString(String inp){
 
-
         if(inp == null){
             return null;
         }
