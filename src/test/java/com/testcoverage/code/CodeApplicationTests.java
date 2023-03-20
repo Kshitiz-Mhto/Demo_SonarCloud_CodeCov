@@ -79,7 +79,7 @@ class CodeApplicationTests {
     }
 
     @Test
-    public void main() {
+    public void testingMain() {
         CodeApplication.main(new String[] {});
    }
 
