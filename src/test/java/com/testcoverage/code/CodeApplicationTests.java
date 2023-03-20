@@ -1,10 +1,10 @@
 package com.testcoverage.code;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.testcoverage.code.Exception.CustomExcep;
@@ -63,6 +63,25 @@ class CodeApplicationTests {
         String bokTitle = ser.getByTitle("Kotlin");
         assertEquals("Kotlin", bokTitle);
     }
+
+    @Test
+    void testingSetters(){
+        final int ID = 99;
+        final String TITLE = "Hero";
+        final  String AUTHOR = "Kilo";
+        Book book = new Book();
+        book.setId(ID);
+        book.setTitle(TITLE);
+        book.setAuthor(AUTHOR);
+        assertNotNull(book.getId());
+        assertNotNull(book.getTitle());
+        assertNotNull(book.getAuthor());
+    }
+
+    @Test
+    public void main() {
+        CodeApplication.main(new String[] {});
+   }
 
     // testing the reverse function
 	Rev reverseString = new Rev();
