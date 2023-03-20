@@ -29,21 +29,21 @@ public class BookService {
         return null;
     }
 
-    public String[] getBookByIdPublisher(String publisher){
+    public List<Integer> getBookByIdPublisher(String publisher){
         List<Integer> ids = new ArrayList<>();
         for(Book book : list){
             if(publisher.equals(book.getAuthor())){
                 ids.add(book.getId());
             }
         }
-        return  ids.toArray(new String[ids.size()]);
+        return ids;
 
     }
 
-    public Book getByTitle(String title) throws CustomExcep {
+    public String getByTitle(String title) throws CustomExcep {
         for (Book book : list){
             if(book.getTitle().equals(title)){
-                return book;
+                return book.getTitle();
             }
         }
         throw new CustomExcep("hehe, exception is here lala");
