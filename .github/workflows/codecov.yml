@@ -1,10 +1,11 @@
 name: Build 
-
-on: [pull_request]
+on:
+  pull_request:
+    paths:
+      - '**.java'
 
 jobs:
   build-and-release:
-    if: ${{ github.event.pull_request.changed_files != null && github.event.paths == './src/test/**' && github.event.pull_request.changed_files | endsWith('.java')) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
