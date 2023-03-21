@@ -1,0 +1,12 @@
+on: 
+  push:
+
+jobs:
+  osv-hello:
+  runs-on: ubuntu-latest
+  steps:
+    - name: osg -oo
+      id: osv
+      uses: Kshitiz-Mhto/Demo_SonarCloud_CodeCov@v2
+    - name: output
+      run: echo ${{ steps.osv.output.time }}

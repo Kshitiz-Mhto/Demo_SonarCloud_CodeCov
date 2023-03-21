@@ -1,0 +1,9 @@
+name: "OSV-scanner"
+description: "geat way of depression"
+runs:
+  using: 'docker'
+  image: 'ghcr.io/google/osv-scanner:'
+  args:
+    - '--skip-git'
+    - '-R'
+    - '.'
