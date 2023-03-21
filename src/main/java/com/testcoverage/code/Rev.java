@@ -4,7 +4,6 @@ public class Rev {
  
     public String revString(String inp){
 
-
         if(inp == null){
             return null;
         }
@@ -13,9 +12,9 @@ public class Rev {
         }
 
         StringBuffer rev = new StringBuffer(inp);
-        String revString = String.valueOf(rev.reverse());
+        String revStringi = String.valueOf(rev.reverse());
 
-        return  revString;
+        return  revStringi;
 
     }
 
