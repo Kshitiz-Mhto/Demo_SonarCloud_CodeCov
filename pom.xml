@@ -39,7 +39,10 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/cobertura-maven-plugin -->
-
+		<properties>
+		  <sonar.organization>kshitiz-mhto</sonar.organization>
+		  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		</properties>
 	</dependencies>
 
 	<build>
